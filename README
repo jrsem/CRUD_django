@@ -1,0 +1,21 @@
+from crud import views
+
+
+YOU CAN USER THESE TO SEND REQUEST / TO EXECUTE A METHODE:
+
+return redirect("crud:index") = > put the url calles "index" to the browser, and the browser send the request to jando to executhe the
+related function;
+
+NB) that use in views
+
+== ===
+action="{% url 'crud:add' %}"= > put the url calles "add" to the browser, and the browser send the request to jando to executhe the
+related function;
+
+NB) that use in html form
+== == == == == ==
+
+href="{% url 'crud:add' %}"= > put the url calles "add" to the browser, and the browser send the request to jando to executhe the
+related function;
+
+NB) that use in "a" tag
