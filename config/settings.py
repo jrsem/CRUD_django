@@ -1,7 +1,7 @@
 
 from pathlib import Path
 import os
-import dj_database_url
+# import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -10,21 +10,21 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-$wj%ipg#l5c+v@u!#)vs@ml2x2#b1$u%isa58o54bg^z^q+37&'
+SECRET_KEY = 'django-insecure-$wj%ipg#l5c+v@u!#)vs@ml2x2#b1$u%isa58o54bg^z^q+37&'
 
 # # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
+DEBUG = True
 
 
-SECRET_KEY = os.environ.get(
-    'DJANGO_SECRET_KEY', '-d#y@*ob)s0y*g0xa1yu=zn-+=305$bjshn%&4y(ggyne57me=q')
+# SECRET_KEY = os.environ.get(
+#     'DJANGO_SECRET_KEY', '-d#y@*ob)s0y*g0xa1yu=zn-+=305$bjshn%&4y(ggyne57me=q')
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DJANGO_DEBUG', '') == 'True'
+# # SECURITY WARNING: don't run with debug turned on in production!
+# DEBUG = os.environ.get('DJANGO_DEBUG', '') == 'True'
 
-ALLOWED_HOSTS = ['pilcode-crud.herokuapp.com']
+# ALLOWED_HOSTS = ['pilcode-crud.herokuapp.com']
 
-
+ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    # 'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
